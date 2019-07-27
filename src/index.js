@@ -8,9 +8,9 @@ class FileList extends React.Component{
 
     render(){
         return(
-            <table className={"file-list"}>
+            <div>
 
-            </table>
+            </div>
         )
     }
 }
