@@ -1,7 +1,20 @@
 # React component that replicates GitHub's file list
 
-This is a React Component that displays a list of files with their names, commit messages, and relative time they were modified. This is one of the components I made along my journey in learning React. This project covers all the basic concepts in React like one way data flow, props, state, etc.
+This is a React Component that displays a list of files with their names, commit messages, and relative time they were modified. This is one of the components I made along my journey in learning React. This project covers all the basic concepts in React like one way data flow, props, state, ___________
+ 
+ Here is an example of the final component in action - 
+![](screens/product.png)
 
+## Development Process
+This section contains some details about how I went about building the component.
+
+####1. Designing and Breaking down into components
+First, a rough sketch was made of what the intended result was and then it was broken down further into child components that did one specific tasks so that they could be reused again. 
+![](screens/break-into-components.png) 
+
+####2. Establishing the hierarchy between components (Parent - Child relationships)
+For our case, this can be the hierarchy between the components -
+![](screens/hierarchy.png) 
 ## Running the project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
