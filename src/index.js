@@ -11,7 +11,7 @@ let testFiles = [
         id: 1,
         name: 'src',
         type: 'folder',
-        updated_at: "2019-07-11 21:24:00",
+        updated_at: "2019-06-11 21:24:00",
         latestCommit: {
             message: 'Initial commit'
         }
@@ -70,6 +70,7 @@ class FileListItem extends React.Component{
             <tr className={"file-list-item"}>
                 <FileName file={this.props.file} />
                 <CommitMessage  message={this.props.file.latestCommit.message} />
+                <Time timestamp={this.props.file.updated_at}/>
             </tr>
         )
     }
@@ -109,5 +110,15 @@ const CommitMessage = ({message}) => (
       {message}
   </td>
 );
+
+const Time = ({timestamp}   ) =>{
+    const timeString =moment(timestamp).fromNow();
+
+    return(
+        <td className={"time"}>
+            {timeString}
+        </td>
+    )
+};
 
 ReactDOM.render(<FileList files = {testFiles} />, document.getElementById("root"));
