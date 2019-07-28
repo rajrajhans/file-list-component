@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import './index.css'
+import moment from 'moment'
+
 //Sample FilesList object for testing
 
 let testFiles = [
@@ -67,6 +69,7 @@ class FileListItem extends React.Component{
         return(
             <tr className={"file-list-item"}>
                 <FileName file={this.props.file} />
+                <CommitMessage  message={this.props.file.latestCommit.message} />
             </tr>
         )
     }
@@ -99,6 +102,12 @@ const FileName = ({file}) => (
         <FileIcon file={file}/>
         <td className={"file-name"}> {file.name}</td>
     </React.Fragment>
+);
+
+const CommitMessage = ({message}) => (
+  <td className={"commit-message"}>
+      {message}
+  </td>
 );
 
 ReactDOM.render(<FileList files = {testFiles} />, document.getElementById("root"));
