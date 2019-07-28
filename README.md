@@ -15,6 +15,11 @@ First, a rough sketch was made of what the intended result was and then it was b
 ####2. Establishing the hierarchy between components (Parent - Child relationships)
 For our case, this can be the hierarchy between the components -
 ![](screens/hierarchy.png) 
+
+### Building the components 
+We shall build the components top-down, i.e. starting from FileList and working our way down to the child components. 
+#### 1. FileListx
+
 ## Running the project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
