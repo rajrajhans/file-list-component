@@ -13,7 +13,7 @@ First, a rough sketch was made of what the intended result was and then it was b
 ![](screens/break-into-components.png) 
 
 #### 2. Establishing the hierarchy between components (Parent - Child relationships)
-For our case, this can be the hierarchy between the components -
+In our case, this can be the hierarchy between the components -
 
 ![](screens/hierarchy.png) 
 
